@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+body{
+    background-image: url(../public/Screenshot\ 2025-07-24\ 104230.png);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+.center{
+  height: 50vh;
+  width: 50vw;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.form-card{
+    margin-bottom: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+
+}
+.app-heading{
+  padding: 4px;
+  color: rgb(244, 241, 241);   
+font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  
+}
+.input-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+  padding-top: 5px;
+  gap: 12px;
+  
+}
+.input-box{
+  width: 30vw;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;  
+  font-size: large;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* display: flex;
+  gap: 20px; */
+font-family: 'Segoe UI', sans-serif;
+}
+.input-box::placeholder{
+  color: #ffffff;
+  opacity: 1;
+    font-style: italic;
+
+}
+.save-button{
+  width:20%;
+  height:40px;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color:rgba(255, 255, 255, 0.1);
   color: white;
+  font-weight: bolder;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: larger;
+  cursor: pointer;
+  transition: 0.1s;
+  border:aliceblue;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+.plus-button{
+  width:20%;
+  height:40px;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color:rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bolder;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: larger;
+  cursor: pointer;
+  transition: 0.1s;
+  border:aliceblue;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+.save-button:hover{
+  transform: scale(1.1);
+}
+.save-button:active{
+  color: rgb(101, 100, 100);
+}
+.plus-button:hover{
+  transform: scale(1.1);
+}
+.plus-button:active{
+  color: rgb(101, 100, 100);
 }
 
-.App-link {
-  color: #61dafb;
+.list-container{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+  margin-bottom: 15px;
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+.icon{
+  position: absolute;
+  right: 10px;
+  display: flex;
+  gap: 12px;
+}
+.icon i{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.icon i:hover{
+  transform: scale(1.2);
+}
+.icon-delete:hover{
+  color: red;
+}
+.edit{
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.edit:hover{
+  transform: scale(1.2);
+  color: rgb(37, 120, 192);
+}
+.edit-input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  color: white;
+  margin-right: 10px;
+  width: 60%;
 }
