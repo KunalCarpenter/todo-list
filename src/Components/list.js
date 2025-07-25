@@ -17,12 +17,13 @@ function Todolist(props) {
                 </>
             ) : (
                 <>
+                    <span className="temp">
                     <span
                         className={props.item.completed ? "completed" : ""}
                         onClick={() => !props.item.completed && props.completeItem(props.index)}
                     >
                         {props.item.text}
-                    </span>
+                    </span></span>
                     <span className="icon">
                         <i
                             className="fa-solid fa-pencil edit"
