@@ -23,7 +23,7 @@ function TodoInput(props){
             onClick={()=>{
                 props.addList(inputText)
                 setInputText("")
-            }}>add</button>
+            }}>Add</button>
             <br/>
         </div>
         

@@ -7,7 +7,7 @@ function Todolist(props) {
                 <>
                     <input
                         type="text"
-                        value={props.item}
+                        value={props.item.text}
                         onChange={props.onChangeEdit}
                         className="edit-input"
                     />
@@ -17,7 +17,12 @@ function Todolist(props) {
                 </>
             ) : (
                 <>
-                    <span>{props.item}</span>
+                    <span
+                        className={props.item.completed ? "completed" : ""}
+                        onClick={() => !props.item.completed && props.completeItem(props.index)}
+                    >
+                        {props.item.text}
+                    </span>
                     <span className="icon">
                         <i
                             className="fa-solid fa-pencil edit"
