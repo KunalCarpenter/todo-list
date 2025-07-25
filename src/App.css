@@ -168,6 +168,11 @@ font-family: 'Segoe UI', sans-serif;
   text-decoration: line-through;
   opacity: 0.6;
 }
+.temp:hover{
+  transform: scale(1.2);
+  color: rgb(255, 255, 255);
+  cursor: default;
+} 
 .modal-overlay {
   position: fixed;
   top: 0; left: 0;
